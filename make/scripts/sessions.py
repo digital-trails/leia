@@ -136,7 +136,7 @@ def create_short_sessions():
     return d_sessions
 
 def create_surveys():
-    accepted = ["ema_pre", "ema_mid", "ema_post", "int_1", "int_2", "int_3", "int_4", "int_5"]
+    accepted = ["ema_pre", "forced_ema_pre", "ema_mid", "ema_post", "int_1", "int_2", "int_3", "int_4", "int_5"]
     accepted = [lower(a) for a in accepted]
     surveys  = defaultdict(lambda: defaultdict(list))
 
@@ -224,7 +224,8 @@ folders = {}
 
 folders['sessions/__flow__.json'] = {"mode":"sequential", "order": ["ema_pre","int_1-2","ema_mid","domains","int_3","int_4","int_5","ema_post"] }
 folders['sessions/ema_pre'] = flat(surveys, "ema_pre")
-folders['sessions/int_1-2/__flow__.json'] = {"mode":"sequential", "take": 1, "condition": ["interest","=",0,"&&","socialcontext","in",[0,1,2],"&&","preanxious",">","2"], "repeat":True }
+folders['sessions/forced_ema_pre'] = flat(surveys, "forced_ema_pre")
+folders['sessions/int_1-2/__flow__.json'] = {"mode":"sequential", "take": 1, "condition": ["interest","=",0,"&&","socialcontext","in",[0,1,2],"&&","preanxious",">","2","||","preanxious_forced",">","2"], "repeat":True }
 folders['sessions/int_1-2'] = flat(surveys,"int_1-2")
 folders['sessions/ema_mid'] = flat(surveys,"ema_mid")
 
@@ -234,16 +235,17 @@ for domain, doses in sessions.items():
         for i, dose in enumerate(doses,1):
             folders[f'sessions/domains/{internal_selections[domain]}/{i}'] = dose
 
-folders['sessions/int_3/__flow__.json'] = {"mode":"sequential", "take": 1, "condition": ["interest","=",0,"&&","socialcontext","=",1,"&&","preanxious","<",3], "repeat":True }
+folders['sessions/int_3/__flow__.json'] = {"mode":"sequential", "take": 1, "condition": ["interest","=",0,"&&","socialcontext","=",1,"&&","preanxious","<",3,"||","preanxious_forced","<",3], "repeat":True }
 folders['sessions/int_3'] = flat(surveys,"int_3")
-folders['sessions/int_4/__flow__.json'] = {"mode":"sequential", "take": 1, "condition": ["interest","=",1,"&&","socialcontext","in",[1,2]], "repeat":True }
+folders['sessions/int_4/__flow__.json'] = {"mode":"sequential", "take": 1, "condition": ["interest","=",1,"&&","socialcontext","in",[1,2],"&&","interest_forced","!=",0,"&&","interest_forced","!=",1], "repeat":True }
 folders['sessions/int_4'] = flat(surveys,"int_4")
-folders['sessions/int_5/__flow__.json'] = {"mode":"sequential", "take": 1, "condition": ["interest","=",1,"&&","socialcontext","=",0], "repeat":True }
+folders['sessions/int_5/__flow__.json'] = {"mode":"sequential", "take": 1, "condition": ["interest","=",1,"&&","socialcontext","=",0,"&&","interest_forced","!=",0,"&&","interest_forced","!=",1], "repeat":True }
 folders['sessions/int_5'] = flat(surveys,"int_5")
 folders['sessions/ema_post'] = flat(surveys,"ema_post")
 folders['sessions/ema_post/__flow__.json'] = {"condition":["interest","=",0]}
 
 folders['sessions_testing/ema_pre'] = flat(surveys,"ema_pre")
+folders['sessions_testing/forced_ema_pre'] = flat(surveys, "forced_ema_pre")
 folders['sessions_testing/int_1-2'] = flat(surveys,"int_1-2")
 folders['sessions_testing/ema_mid'] = flat(surveys,"ema_mid")
 folders['sessions_testing/domains/__flow__.json'] = {"mode":"select", "column_count":2, "text": domain_selection_text(), "title":"MindTrails", "selections": shown_selections, "condition": ["interest","=",0] }

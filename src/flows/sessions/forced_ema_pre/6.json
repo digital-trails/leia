@@ -1,0 +1,15 @@
+{
+    "header_text": "",
+    "header_icon": "assets/subtitle.png",
+    "elements": [
+        {
+            "type": "Text",
+            "text": "Since you have not yet completed a session today, there will not be an option to reschedule. Please complete this session now"
+        }
+    ],
+    "condition": [
+        "interest_forced",
+        "=",
+        1
+    ]
+}

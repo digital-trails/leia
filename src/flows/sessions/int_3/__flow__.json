@@ -12,6 +12,10 @@
         "&&",
         "preanxious",
         "<",
+        3,
+        "||",
+        "preanxious_forced",
+        "<",
         3
     ],
     "repeat": true

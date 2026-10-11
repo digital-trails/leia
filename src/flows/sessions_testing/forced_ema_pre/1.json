@@ -1,0 +1,22 @@
+{
+    "header_text": "",
+    "header_icon": "assets/subtitle.png",
+    "elements": [
+        {
+            "type": "Text",
+            "text": "Right now, I am feeling...."
+        },
+        {
+            "type": "Slider",
+            "min": 1,
+            "max": 7,
+            "labels": [
+                "Very bad/negative",
+                "Very good/positive"
+            ],
+            "others": [],
+            "name": "preaffect",
+            "variable_name": "preaffect_forced"
+        }
+    ]
+}
