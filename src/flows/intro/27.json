@@ -4,7 +4,7 @@
     "elements": [
         {
             "type": "Text",
-            "text": "You're going to be ask to do at least 1 set of these thinking exercises a day, and they should take about 5 minutes a day. Check this box to say that you agree."
+            "text": "You are also going to be asked to do at least 1 set of these thinking exercises a day, which should take you about 5 minutes. Check this box to say that you agree."
         },
         {
             "type": "Buttons",
