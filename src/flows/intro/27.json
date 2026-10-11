@@ -12,7 +12,7 @@
                 "0::I agree to complete at least one session per day"
             ],
             "ColumnCount": 1,
-            "name": "terms_agreement"
+            "name": "survey_agreement"
         }
     ]
 }
