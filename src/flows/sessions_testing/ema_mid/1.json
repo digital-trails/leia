@@ -18,5 +18,26 @@
             "name": "midanxious",
             "variable_name": "midanxious"
         }
+    ],
+    "condition": [
+        "interest",
+        "=",
+        0,
+        "&&",
+        "socialcontext",
+        "in",
+        [
+            0,
+            1,
+            2
+        ],
+        "&&",
+        "preanxious",
+        ">",
+        2,
+        "||",
+        "preanxious_forced",
+        ">",
+        2
     ]
 }
