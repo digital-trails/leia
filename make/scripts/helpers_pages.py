@@ -350,7 +350,7 @@ def create_resource_page(tips, strategies, resources, domain):
 
     return {"header_text": title, "header_icon": "assets/subtitle.png", "elements": elements }
 
-def create_discrimination_page(conditions, text, items, input_1, input_name, variable_name, title):
+def _create_discrimination_page(conditions, text, items, input_1, input_name, variable_name, title):
 
     text = {"type": "Text", "text": text, 'html':True}
     input = create_input(input_1, items, input_name, variable_name)
@@ -364,6 +364,17 @@ def create_discrimination_page(conditions, text, items, input_1, input_name, var
     }
 
     return page
+
+def create_discrimination_page(row):
+    conditions = row[8]
+    text = row[4]
+    items = row[5]
+    input_1 = row[3]
+    input_name = row[6]
+    variable_name = row[6]
+    title = row[2]
+
+    return _create_discrimination_page(conditions, text, items, input_1, input_name, variable_name, title)
 
 def create_survey_page(text=None, media=None, image_framed=None, values=None, input_type=None,
                        variable_name=None, title=None, output_name=None, show_buttons=None, 

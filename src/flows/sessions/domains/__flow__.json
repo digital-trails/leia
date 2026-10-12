@@ -10,7 +10,8 @@
         "Finances": "finances",
         "Mental Health": "mental",
         "Physical Health": "physical",
-        "Social Situations": "social"
+        "Social Situations": "social",
+        "Discrimination": "discrimination"
     },
     "condition": [
         "interest",

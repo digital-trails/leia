@@ -1,0 +1,27 @@
+{
+    "header_text": "At the grocery store",
+    "header_icon": "assets/subtitle.png",
+    "elements": [
+        {
+            "type": "Text",
+            "text": "You are entering a grocery store wearing a shirt with a Pride symbol on it. You notice another customer in the store, glaring at you. You feel isolated.",
+            "html": true
+        },
+        {
+            "type": "WordPuzzle",
+            "correct_feedback": "Correct",
+            "incorrect_feedback": "Whoops! That doesn't look right. Please wait a moment and try again.",
+            "incorrect_delay": 5000,
+            "display_delay": 2000,
+            "words": "isolated",
+            "name": "discrim_ex1_prompt",
+            "variable_name": "discrim_ex1_prompt"
+        }
+    ],
+    "condition": [
+        "discrim_choice",
+        "=",
+        1
+    ],
+    "navigation_conditions": "wait_for_correct"
+}

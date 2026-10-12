@@ -1,0 +1,16 @@
+{
+    "header_text": "",
+    "header_icon": "assets/subtitle.png",
+    "elements": [
+        {
+            "type": "Text",
+            "text": "Here are examples of stories you could write, when facing discriminatory stress. After you take a look at the example, we'll guide you through writing your own.",
+            "html": true
+        }
+    ],
+    "condition": [
+        "discrim_choice",
+        "=",
+        1
+    ]
+}

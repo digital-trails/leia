@@ -1,0 +1,16 @@
+{
+    "header_text": "Intro",
+    "header_icon": "assets/subtitle.png",
+    "elements": [
+        {
+            "type": "Text",
+            "text": "Now, it's your turn to write your own. We know discrimination can look different for everyone, so here's how you can write your own narrative.",
+            "html": true
+        }
+    ],
+    "condition": [
+        "discrim_choice",
+        "=",
+        1
+    ]
+}

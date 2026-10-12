@@ -1,0 +1,16 @@
+{
+    "header_text": "-",
+    "header_icon": "assets/subtitle.png",
+    "elements": [
+        {
+            "type": "Text",
+            "text": "There are lots of options out there for resources to help with what you're going through. Check out the list below to find resources that might be a good fit for you, and pick three you think you might be able to use. [https://docs.google.com/document/d/12gJbgtisHaP0JO3C4Wfirmb2mES7iBxAzy6tOenKHvo/edit?tab=t.0]",
+            "html": true
+        }
+    ],
+    "condition": [
+        "discrim_choice",
+        "=",
+        2
+    ]
+}

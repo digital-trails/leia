@@ -1,0 +1,20 @@
+{
+    "header_text": "",
+    "header_icon": "assets/subtitle.png",
+    "elements": [
+        {
+            "type": "Text",
+            "text": "There are lots of differents ways people choose to cope with discrimination. Which would you like to try?\n",
+            "html": true
+        },
+        {
+            "type": "Buttons",
+            "buttons": [
+                "1::Write Your Own Scenarios\n2. Journalling & Community Resources"
+            ],
+            "ColumnCount": 1,
+            "name": "discrim_choice",
+            "variable_name": "discrim_choice"
+        }
+    ]
+}

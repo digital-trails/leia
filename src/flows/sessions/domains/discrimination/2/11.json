@@ -1,0 +1,16 @@
+{
+    "header_text": "-",
+    "header_icon": "assets/subtitle.png",
+    "elements": [
+        {
+            "type": "Text",
+            "text": "Gathering your thoughts and reflecting on an experience can be a helpful way to process something difficult.",
+            "html": true
+        }
+    ],
+    "condition": [
+        "discrim_choice",
+        "=",
+        2
+    ]
+}

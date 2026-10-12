@@ -1,42 +1,42 @@
-Broad Domain 1,Title Text,Body Text,Options,variable,name,condition,Undergrad correct response,Undergrad incorrect response,Undergrad photo link,Undergrad photo name,Letters Missing,Occurrence
-INTRO,,"We're sorry that you're facing discrimination of any kind. We know it can be hard to manage anxiety when facing discrimination, or any stress related to an identity you hold.",,,,,,,,,,
-INTRO,,Which aspect of your identity or which domain of discrimination is this stress related to?,"1. Racial or ethnic identity; 2. Immigrant identity; 3. Body size; 4. Disability; 5. Sexual orientation or gender identity; 6. Socioeconomic status, 7. Political affiliation 8. Religion 9. Age",discrim_source,discrim_source,,,,,,,
-INTRO,,"There are lots of differents ways people choose to cope with discrimination. Which would you like to try?
+Broad Domain 1,Sessions,Title Text,Input,Body Text,Options,variable,name,condition,Undergrad correct response,Undergrad incorrect response,Undergrad photo link,Undergrad photo name,Letters Missing,Occurrence
+INTRO,ALL,,,"We're sorry that you're facing discrimination of any kind. We know it can be hard to manage anxiety when facing discrimination, or any stress related to an identity you hold.",,,,,,,,,,
+INTRO,ALL,,Single,Which aspect of your identity or which domain of discrimination is this stress related to?,"1. Racial or ethnic identity; 2. Immigrant identity; 3. Body size; 4. Disability; 5. Sexual orientation or gender identity; 6. Socioeconomic status, 7. Political affiliation 8. Religion 9. Age",discrim_source,discrim_source,,,,,,,
+INTRO,ALL,,Single,"There are lots of differents ways people choose to cope with discrimination. Which would you like to try?
 ","1. Write Your Own Scenarios
 2. Journalling & Community Resources",discrim_choice,discrim_choice,,,,,,,
-"If discrim_choice = 1, then WYO",,,,,,,,,,,,
-WYO,,"Here are examples of stories you could write, when facing discriminatory stress. After you take a look at the example, we'll guide you through writing your own.",,,,,,,,,,
-show discrim_ex1_prompt and discrim_ex1_resolve the first session,,,,,,,,,,,,
-WYO,At the grocery store,"You are entering a grocery store wearing a shirt with a Pride symbol on it. You notice another customer in the store, glaring at you. You feel isolated.","[word ""isolated"" will have letters missing]",discrim_ex1_prompt,,,,,,,,
-WYO,,You take a moment to look around and you notice other shoppers wearing other visibly queer symbols or outfits. You realize that you are not alone.,"[word ""alone"" will have letters missing]",discrim_ex1_resolve,,,,,,,,
-"show discrim_ex2_prompt and discrim_ex2_resolve the second time, then alternate between discrim_ex1 and discrim_ex2 between future discrimination sessions",,,,,,,,,,,,
-WYO,In the cafeteria,"You are sitting in the cafeteria, when you overhear two people talking saying they think there are too many students of color being admitted to your school. You feel worried that others think you don't belong, and you feel hurt.","[word ""hurt"" will have letters missing]",discrim_ex2_prompt,,,,,,,,
-WYO,,You recognize that they are being ignorant. You remind yourself that their opinion is not fact.,"[word ""fact"" will have letters missing]",discrim_ex2_resolve,,,,,,,,
-WYO,Intro,"Now, it's your turn to write your own. We know discrimination can look different for everyone, so here's how you can write your own narrative.",,discrim_wyo1_intro,,,,,,,,
-WYO,Describe the Situation,"Think about a situation where someone in appeared to be looking at you in a particular way...
+"If discrim_choice = 1, then WYO",,,,,,,,,,,,,,
+WYO,ALL,,,"Here are examples of stories you could write, when facing discriminatory stress. After you take a look at the example, we'll guide you through writing your own.",,,,discrim_choice = 1,,,,,,
+show discrim_ex1_prompt and discrim_ex1_resolve the first session,,,,,,,,,,,,,,
+WYO,1,At the grocery store,puzzle,"You are entering a grocery store wearing a shirt with a Pride symbol on it. You notice another customer in the store, glaring at you. You feel isolated.",isolated,discrim_ex1_prompt,,discrim_choice = 1,,,,,,
+WYO,1,,puzzle,You take a moment to look around and you notice other shoppers wearing other visibly queer symbols or outfits. You realize that you are not alone.,alone,discrim_ex1_resolve,,discrim_choice = 1,,,,,,
+"show discrim_ex2_prompt and discrim_ex2_resolve the second time, then alternate between discrim_ex1 and discrim_ex2 between future discrimination sessions",,,,,,,,,,,,,,
+WYO,2,In the cafeteria,puzzle,"You are sitting in the cafeteria, when you overhear two people talking saying they think there are too many students of color being admitted to your school. You feel worried that others think you don't belong, and you feel hurt.",hurt,discrim_ex2_prompt,,discrim_choice = 1,,,,,,
+WYO,2,,puzzle,You recognize that they are being ignorant. You remind yourself that their opinion is not fact.,fact,discrim_ex2_resolve,,discrim_choice = 1,,,,,,
+WYO,ALL,Intro,,"Now, it's your turn to write your own. We know discrimination can look different for everyone, so here's how you can write your own narrative.",,discrim_wyo1_intro,,discrim_choice = 1,,,,,,
+WYO,ALL,Describe the Situation,Text,"Think about a situation where someone in appeared to be looking at you in a particular way...
 
-Where were you when it happened? What was going on? Write about the event like it is happening now, not like it happened in the past.",[text box],discrim_wyo1_situation,,,,,,,,
-WYO,Describe Your Concerns About the Situation Initially,"Think about what you might worry about in ways that they might be judging you, or raise the concerns you have about the situation
+Where were you when it happened? What was going on? Write about the event like it is happening now, not like it happened in the past.",[text box],discrim_wyo1_situation,,discrim_choice = 1,,,,,,
+WYO,ALL,Describe Your Concerns About the Situation Initially,Text,"Think about what you might worry about in ways that they might be judging you, or raise the concerns you have about the situation
 
 Some examples you can use:
 I was worried about being judged. 
 I thought people might not like me.
-I was concerned for my safety.",[text box],discrim_wyo1_concern,,,,,,,,
-WYO,Describe How You Could Resolve Your Concern About the Situation,"Think about what you might say to yourself about that person's judgement.
+I was concerned for my safety.",[text box],discrim_wyo1_concern,,discrim_choice = 1,,,,,,
+WYO,ALL,Describe How You Could Resolve Your Concern About the Situation,Text,"Think about what you might say to yourself about that person's judgement.
 
-You may find it helpful to remind yourself that their judgement doesn't matter, that you are a part of community, that you are safe - or something else entirely.",[text box],discrim_wyo1_resolution,,,,,,,,
-"If discrim_choice = 2, then JOURNAL_RESOURCE",,,,,,,,,,,,
-JOURNAL_RESOURCE,-,Gathering your thoughts and reflecting on an experience can be a helpful way to process something difficult.,,,,,,,,,,
-JOURNAL_RESOURCE,-,Take a moment to write out about what has been stressing you out.,[large text box],discrim_journal,,,,,,,,
-JOURNAL_RESOURCE,-,"There are lots of options out there for resources to help with what you're going through. Check out the list below to find resources that might be a good fit for you, and pick three you think you might be able to use. [https://docs.google.com/document/d/12gJbgtisHaP0JO3C4Wfirmb2mES7iBxAzy6tOenKHvo/edit?tab=t.0]",[show drop down of resources from Discrimination Resources tab],discrim_resource_list,,,,,,,,
-JOURNAL_RESOURCE,-,Which three of these would you be most likely to use?,"[show drop down of resources from Discrimination Resources tab], select 3",discrim_resource_selection,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,,,,,,,,,,,
-,,CBM-I example,,,,,,,,,,
-,,Journalling + something else,,,,,,,,,,
-,,Resources + Journalling,,,,,,,,,,
-,,https://docs.google.com/document/d/12gJbgtisHaP0JO3C4Wfirmb2mES7iBxAzy6tOenKHvo/edit?tab=t.0,,,,,,,,,,
+You may find it helpful to remind yourself that their judgement doesn't matter, that you are a part of community, that you are safe - or something else entirely.",[text box],discrim_wyo1_resolution,,discrim_choice = 1,,,,,,
+"If discrim_choice = 2, then JOURNAL_RESOURCE",,,,,,,,,,,,,,
+JOURNAL_RESOURCE,ALL,-,,Gathering your thoughts and reflecting on an experience can be a helpful way to process something difficult.,,,,discrim_choice = 2,,,,,,
+JOURNAL_RESOURCE,ALL,-,Text,Take a moment to write out about what has been stressing you out.,[large text box],discrim_journal,,discrim_choice = 2,,,,,,
+JOURNAL_RESOURCE,ALL,-,,"There are lots of options out there for resources to help with what you're going through. Check out the list below to find resources that might be a good fit for you, and pick three you think you might be able to use. [https://docs.google.com/document/d/12gJbgtisHaP0JO3C4Wfirmb2mES7iBxAzy6tOenKHvo/edit?tab=t.0]",[show drop down of resources from Discrimination Resources tab],discrim_resource_list,,discrim_choice = 2,,,,,,
+JOURNAL_RESOURCE,ALL,-,,Which three of these would you be most likely to use?,"[show drop down of resources from Discrimination Resources tab], select 3",discrim_resource_selection,,discrim_choice = 2,,,,,,
+,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,
+,,,,CBM-I example,,,,,,,,,,
+,,,,Journalling + something else,,,,,,,,,,
+,,,,Resources + Journalling,,,,,,,,,,
+,,,,https://docs.google.com/document/d/12gJbgtisHaP0JO3C4Wfirmb2mES7iBxAzy6tOenKHvo/edit?tab=t.0,,,,,,,,,,

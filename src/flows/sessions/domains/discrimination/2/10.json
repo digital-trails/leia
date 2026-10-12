@@ -1,0 +1,16 @@
+{
+    "header_text": "Describe How You Could Resolve Your Concern About the Situation",
+    "header_icon": "assets/subtitle.png",
+    "elements": [
+        {
+            "type": "Text",
+            "text": "Think about what you might say to yourself about that person's judgement.\n\nYou may find it helpful to remind yourself that their judgement doesn't matter, that you are a part of community, that you are safe - or something else entirely.",
+            "html": true
+        }
+    ],
+    "condition": [
+        "discrim_choice",
+        "=",
+        1
+    ]
+}

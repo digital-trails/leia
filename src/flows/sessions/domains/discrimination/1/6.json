@@ -1,0 +1,27 @@
+{
+    "header_text": "",
+    "header_icon": "assets/subtitle.png",
+    "elements": [
+        {
+            "type": "Text",
+            "text": "You take a moment to look around and you notice other shoppers wearing other visibly queer symbols or outfits. You realize that you are not alone.",
+            "html": true
+        },
+        {
+            "type": "WordPuzzle",
+            "correct_feedback": "Correct",
+            "incorrect_feedback": "Whoops! That doesn't look right. Please wait a moment and try again.",
+            "incorrect_delay": 5000,
+            "display_delay": 2000,
+            "words": "alone",
+            "name": "discrim_ex1_resolve",
+            "variable_name": "discrim_ex1_resolve"
+        }
+    ],
+    "condition": [
+        "discrim_choice",
+        "=",
+        1
+    ],
+    "navigation_conditions": "wait_for_correct"
+}

@@ -1,0 +1,11 @@
+{
+    "header_text": "",
+    "header_icon": "assets/subtitle.png",
+    "elements": [
+        {
+            "type": "Text",
+            "text": "We're sorry that you're facing discrimination of any kind. We know it can be hard to manage anxiety when facing discrimination, or any stress related to an identity you hold.",
+            "html": true
+        }
+    ]
+}

@@ -5,7 +5,7 @@ from collections import defaultdict
 from itertools import islice, cycle, chain
 from pathlib import Path
 
-from helpers_pages import create_scenario_pages, create_survey_page,create_resource_page
+from helpers_pages import create_scenario_pages, create_survey_page,create_resource_page, create_discrimination_page
 from helpers_pages import create_long_pages, create_write_your_own_page, create_video_page
 from helpers_utilities import get_strategies, get_tips, clean_up_unicode, has_value, create_puzzle
 from helpers_utilities import dir_safe, shuffle, write_output, media_url, lower, get_page_index 
@@ -178,10 +178,30 @@ def create_resource_dose_creator():
 
     return lambda domain: [create_resource_page(tips, strategies, resources, domain)]
 
+def create_discrimination_domain():
+    pages = defaultdict(list)
+    with open(f"{dir_csv}/LEIA Interventions, Resources, and Tips - Discrimination Options.csv", "r", encoding="utf-8") as f:
+        for row in islice(csv.reader(f),1,None):
+            session = row[1].strip()
+            if session == '': continue
+            page = create_discrimination_page(row)
+
+            if lower(session)=='all':
+                pages["1"].append(page)
+                pages["2"].append(page)
+
+            else:
+                pages[session].append(page)
+
+
+    return pages
+
+
 surveys         = create_surveys()
 short_sessions  = create_short_sessions()         # dict of short session iter by domain
 long_sessions   = create_long_sessions()          # dict of long session cycle by domain
 resources       = create_resource_dose_creator()  # lambda that takes a domain and returns a dose
+discrimination  = create_discrimination_domain()
 
 domains  = short_sessions.keys()
 sessions = defaultdict(list)
@@ -201,6 +221,7 @@ internal_selections = {
     "Mental Health"                     : "mental",
     "Physical Health"                   : "physical",
     "Social Situations"                 : "social",
+    "Discrimination"                    : "discrimination"
 }
 shown_selections = {
     "Academics/Work/Career" : "academics",
@@ -210,6 +231,7 @@ shown_selections = {
     "Mental Health"         : "mental",
     "Physical Health"       : "physical",
     "Social Situations"     : "social",
+    "Discrimination"        : "discrimination"
 }
 
 # Define folders
@@ -223,6 +245,8 @@ folders['sessions/int_2'] = flat(surveys, "int_2")
 folders['sessions/int_1/__flow__.json'] = {"mode":"sequential", "take": 1, "condition": ["interest","=",0,"&&","socialcontext","in",[0,1],"&&","preanxious",">","2","||","preanxious_forced",">","2"], "repeat":True }
 folders['sessions/int_2/__flow__.json'] = {"mode":"sequential", "take": 1, "condition": ["interest","=",0,"&&","socialcontext","in",[0,1,2],"&&","preanxious",">","2","||","preanxious_forced",">","2"], "repeat":True }
 folders['sessions/ema_mid'] = flat(surveys,"ema_mid")
+
+folders['sessions/domains/discrimination'] = discrimination
 
 folders['sessions/domains/__flow__.json'] = {"mode":"select", "column_count":2, "text": domain_selection_text(), "title":"MindTrails", "selections": shown_selections, "condition": ["interest","=",0] }
 for domain, doses in sessions.items():

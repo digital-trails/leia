@@ -1,0 +1,25 @@
+{
+    "header_text": "",
+    "header_icon": "assets/subtitle.png",
+    "elements": [
+        {
+            "type": "Text",
+            "text": "Which aspect of your identity or which domain of discrimination is this stress related to?",
+            "html": true
+        },
+        {
+            "type": "Buttons",
+            "buttons": [
+                "1::Racial or ethnic identity",
+                "2::Immigrant identity",
+                "3::Body size",
+                "4::Disability",
+                "5::Sexual orientation or gender identity",
+                "6::Socioeconomic status, 7. Political affiliation 8. Religion 9. Age"
+            ],
+            "ColumnCount": 1,
+            "name": "discrim_source",
+            "variable_name": "discrim_source"
+        }
+    ]
+}
