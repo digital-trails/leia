@@ -2,7 +2,8 @@
     "mode": "sequential",
     "order": [
         "ema_pre",
-        "int_1-2",
+        "int_1",
+        "int_2",
         "ema_mid",
         "domains",
         "int_3",
