@@ -247,6 +247,7 @@ folders['sessions/int_2/__flow__.json'] = {"mode":"sequential", "take": 1, "cond
 folders['sessions/ema_mid'] = flat(surveys,"ema_mid")
 
 folders['sessions/domains/discrimination'] = discrimination
+folders['sessions/domains/discrimination/__flow__.json'] = {"mode": "sequential", "take": 1, "repeat": True}
 
 folders['sessions/domains/__flow__.json'] = {"mode":"select", "column_count":2, "text": domain_selection_text(), "title":"MindTrails", "selections": shown_selections, "condition": ["interest","=",0] }
 for domain, doses in sessions.items():
