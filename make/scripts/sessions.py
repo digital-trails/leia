@@ -211,6 +211,10 @@ def create_discrimination_domain():
             elif session != '':
                 page = create_discrimination_page(row)
 
+                if lower(input) == 'puzzle':
+                    page["elements"][1]["words"] = [row[5]]
+                    page["elements"][1]["missing_letter_count"] = 1
+
             else: continue
 
             if lower(session)=='all':
@@ -282,7 +286,7 @@ folders['sessions/ema_mid'] = flat(surveys,"ema_mid")
 folders['sessions/domains/discrimination'] = discrimination
 folders['sessions/domains/discrimination/__flow__.json'] = {"mode": "sequential", "take": 1, "repeat": True}
 
-folders['sessions/domains/__flow__.json'] = {"mode":"select", "column_count":2, "text": domain_selection_text(), "title":"MindTrails", "selections": shown_selections, "condition": ["interest","=",0] }
+folders['sessions/domains/__flow__.json'] = {"mode":"select", "column_count":2, "text": domain_selection_text(), "title":"MindTrails", "selections": shown_selections, "condition": ["interest","=",0,"||","preanxious_forced","in",[1,2,3,4,5,6,7]] }
 for domain, doses in sessions.items():
         folders[f'sessions/domains/{internal_selections[domain]}/__flow__.json'] ={"mode":"sequential", "take":1, "repeat":True }
         for i, dose in enumerate(doses,1):
@@ -305,7 +309,7 @@ folders['sessions_testing/ema_mid'] = flat(surveys,"ema_mid")
 folders['sessions_testing/int_1-2/__flow__.json'] = {"mode":"sequential", "take": 1, "condition": ["interest","=",0,"&&","socialcontext","in",[0,1],"&&","preanxious",">","2","||","preanxious_forced",">","2"], "repeat":True }
 folders['sessions_testing/int_2/__flow__.json'] = {"mode":"sequential", "take": 1, "condition": ["interest","=",0,"&&","socialcontext","=",2,"&&","preanxious",">","2","||","preanxious_forced",">","2"], "repeat":True }
 folders['sessions/ema_mid'] = flat(surveys,"ema_mid")
-folders['sessions_testing/domains/__flow__.json'] = {"mode":"select", "column_count":2, "text": domain_selection_text(), "title":"MindTrails", "selections": shown_selections, "condition": ["interest","=",0] }
+folders['sessions_testing/domains/__flow__.json'] = {"mode":"select", "column_count":2, "text": domain_selection_text(), "title":"MindTrails", "selections": shown_selections, "condition": ["interest","=",0,"||","preanxious_forced","in",[1,2,3,4,5,6,7]] }
 for domain, doses in sessions.items():
         folders[f'sessions_testing/domains/{internal_selections[domain]}/__flow__.json'] ={"mode":"sequential", "take":1, "repeat":True }
         for i, dose in enumerate(doses,1):

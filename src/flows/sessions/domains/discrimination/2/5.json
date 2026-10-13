@@ -13,9 +13,11 @@
             "incorrect_feedback": "Whoops! That doesn't look right. Please wait a moment and try again.",
             "incorrect_delay": 5000,
             "display_delay": 2000,
-            "words": "hurt",
+            "words": [
+                "hurt"
+            ],
             "name": "discrim_ex2_prompt",
-            "variable_name": "discrim_ex2_prompt"
+            "missing_letter_count": 1
         }
     ],
     "condition": [

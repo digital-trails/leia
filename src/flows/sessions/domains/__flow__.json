@@ -16,6 +16,18 @@
     "condition": [
         "interest",
         "=",
-        0
+        0,
+        "||",
+        "preanxious_forced",
+        "in",
+        [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7
+        ]
     ]
 }

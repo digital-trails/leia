@@ -371,7 +371,7 @@ def create_discrimination_page(row):
     items = row[5]
     input_1 = row[3]
     input_name = row[6]
-    variable_name = row[6]
+    variable_name = row[7]
     title = row[2]
 
     return _create_discrimination_page(conditions, text, items, input_1, input_name, variable_name, title)

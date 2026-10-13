@@ -40,8 +40,7 @@
                 "29::VDH Division of Multicultural Health and Community Engagement"
             ],
             "multiselect": true,
-            "name": "discrim_resource_selection",
-            "variable_name": "discrim_resource_selection"
+            "name": "discrim_resource_selection"
         }
     ],
     "condition": [
