@@ -15,7 +15,10 @@
                 "3::Body size",
                 "4::Disability",
                 "5::Sexual orientation or gender identity",
-                "6::Socioeconomic status, 7. Political affiliation 8. Religion 9. Age"
+                "6::Socioeconomic status",
+                "7::Political affiliation",
+                "8::Religion",
+                "9::Age"
             ],
             "ColumnCount": 1,
             "name": "discrim_source",

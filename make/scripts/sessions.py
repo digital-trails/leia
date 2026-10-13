@@ -178,13 +178,40 @@ def create_resource_dose_creator():
 
     return lambda domain: [create_resource_page(tips, strategies, resources, domain)]
 
+def create_discrimination_resource_page():
+    with open(f"{dir_csv}/LEIA Interventions, Resources, and Tips - Discrimination Resources.csv", "r", encoding="utf-8") as f:
+
+        page = {
+            "header_text": "Resources",
+            "elements": []
+                }
+
+        for row in islice(csv.reader(f),3, None):
+            subdomain = row[0]
+            name = row[1]
+            link = row[2]
+            text = row[3]
+
+            page['elements'].append({"type": "Text", "html": True, "text": f"<b><font color=\"#9769ED\" size=6>{name}</font></b><br/><br/>{text}<br/><br/><a href=\"{link}\">{link}</a><br/><br/><br/><br/>"})
+
+    return page
+
 def create_discrimination_domain():
     pages = defaultdict(list)
     with open(f"{dir_csv}/LEIA Interventions, Resources, and Tips - Discrimination Options.csv", "r", encoding="utf-8") as f:
         for row in islice(csv.reader(f),1,None):
             session = row[1].strip()
-            if session == '': continue
-            page = create_discrimination_page(row)
+            input = row[3].strip()
+
+            if lower(input) == 'resources':
+                text = row[4].strip()
+                page = create_discrimination_resource_page()
+                page["elements"].insert(0, {"type": "Text", "html": True, "text": f"<b>{text}</b><br/><br/><br/><br/>"})
+            
+            elif session != '':
+                page = create_discrimination_page(row)
+
+            else: continue
 
             if lower(session)=='all':
                 pages["1"].append(page)

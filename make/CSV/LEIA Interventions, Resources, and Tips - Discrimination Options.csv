@@ -1,8 +1,8 @@
 Broad Domain 1,Sessions,Title Text,Input,Body Text,Options,variable,name,condition,Undergrad correct response,Undergrad incorrect response,Undergrad photo link,Undergrad photo name,Letters Missing,Occurrence
 INTRO,ALL,,,"We're sorry that you're facing discrimination of any kind. We know it can be hard to manage anxiety when facing discrimination, or any stress related to an identity you hold.",,,,,,,,,,
-INTRO,ALL,,Single,Which aspect of your identity or which domain of discrimination is this stress related to?,"1. Racial or ethnic identity; 2. Immigrant identity; 3. Body size; 4. Disability; 5. Sexual orientation or gender identity; 6. Socioeconomic status, 7. Political affiliation 8. Religion 9. Age",discrim_source,discrim_source,,,,,,,
+INTRO,ALL,,Single,Which aspect of your identity or which domain of discrimination is this stress related to?,1. Racial or ethnic identity; 2. Immigrant identity; 3. Body size; 4. Disability; 5. Sexual orientation or gender identity; 6. Socioeconomic status; 7. Political affiliation; 8. Religion; 9. Age,discrim_source,discrim_source,,,,,,,
 INTRO,ALL,,Single,"There are lots of differents ways people choose to cope with discrimination. Which would you like to try?
-","1. Write Your Own Scenarios
+","1. Write Your Own Scenarios;
 2. Journalling & Community Resources",discrim_choice,discrim_choice,,,,,,,
 "If discrim_choice = 1, then WYO",,,,,,,,,,,,,,
 WYO,ALL,,,"Here are examples of stories you could write, when facing discriminatory stress. After you take a look at the example, we'll guide you through writing your own.",,,,discrim_choice = 1,,,,,,
@@ -15,21 +15,21 @@ WYO,2,,puzzle,You recognize that they are being ignorant. You remind yourself th
 WYO,ALL,Intro,,"Now, it's your turn to write your own. We know discrimination can look different for everyone, so here's how you can write your own narrative.",,discrim_wyo1_intro,,discrim_choice = 1,,,,,,
 WYO,ALL,Describe the Situation,Text,"Think about a situation where someone in appeared to be looking at you in a particular way...
 
-Where were you when it happened? What was going on? Write about the event like it is happening now, not like it happened in the past.",[text box],discrim_wyo1_situation,,discrim_choice = 1,,,,,,
+Where were you when it happened? What was going on? Write about the event like it is happening now, not like it happened in the past.",,discrim_wyo1_situation,,discrim_choice = 1,,,,,,
 WYO,ALL,Describe Your Concerns About the Situation Initially,Text,"Think about what you might worry about in ways that they might be judging you, or raise the concerns you have about the situation
 
 Some examples you can use:
 I was worried about being judged. 
 I thought people might not like me.
-I was concerned for my safety.",[text box],discrim_wyo1_concern,,discrim_choice = 1,,,,,,
+I was concerned for my safety.",,discrim_wyo1_concern,,discrim_choice = 1,,,,,,
 WYO,ALL,Describe How You Could Resolve Your Concern About the Situation,Text,"Think about what you might say to yourself about that person's judgement.
 
-You may find it helpful to remind yourself that their judgement doesn't matter, that you are a part of community, that you are safe - or something else entirely.",[text box],discrim_wyo1_resolution,,discrim_choice = 1,,,,,,
+You may find it helpful to remind yourself that their judgement doesn't matter, that you are a part of community, that you are safe - or something else entirely.",,discrim_wyo1_resolution,,discrim_choice = 1,,,,,,
 "If discrim_choice = 2, then JOURNAL_RESOURCE",,,,,,,,,,,,,,
 JOURNAL_RESOURCE,ALL,-,,Gathering your thoughts and reflecting on an experience can be a helpful way to process something difficult.,,,,discrim_choice = 2,,,,,,
-JOURNAL_RESOURCE,ALL,-,Text,Take a moment to write out about what has been stressing you out.,[large text box],discrim_journal,,discrim_choice = 2,,,,,,
-JOURNAL_RESOURCE,ALL,-,,"There are lots of options out there for resources to help with what you're going through. Check out the list below to find resources that might be a good fit for you, and pick three you think you might be able to use. [https://docs.google.com/document/d/12gJbgtisHaP0JO3C4Wfirmb2mES7iBxAzy6tOenKHvo/edit?tab=t.0]",[show drop down of resources from Discrimination Resources tab],discrim_resource_list,,discrim_choice = 2,,,,,,
-JOURNAL_RESOURCE,ALL,-,,Which three of these would you be most likely to use?,"[show drop down of resources from Discrimination Resources tab], select 3",discrim_resource_selection,,discrim_choice = 2,,,,,,
+JOURNAL_RESOURCE,ALL,-,Text,Take a moment to write out about what has been stressing you out.,,discrim_journal,,discrim_choice = 2,,,,,,
+JOURNAL_RESOURCE,ALL,-,Resources,"There are lots of options out there for resources to help with what you're going through. Check out the list below to find resources that might be a good fit for you, and pick three you think you might be able to use. ",,discrim_resource_list,,discrim_choice = 2,,,,,,
+JOURNAL_RESOURCE,ALL,-,Multi,Which three of these would you be most likely to use?,1. LGBTQ Center; 2. Cultural and Ethnic Organizations @UVA; 3. Multicultural Student Center; 4. Interfaith Student Center; 5. Latinx Student Center; 6. Office of African-American Affairs; 7. BIPOC Mental Health and Wellness Resources; 8. LGBTQ+ Mental Health and Wellness Resources; 9. Multicultural Student Services Advising and Personal Support; 10. Equality VA; 11. PFLAG Blue Ridge: Charlottesville Anti-Violence Project; 12. Planned Parenthood; 13. Side by Side; 14. The Women's Initiative; 15. Trans Lifeline; 16. Transgender Health Alliance of Central Virginia; 17. VA Anti-Violence Project; 18. UVA Teen & Young Adult Health Center; 19. The Women's Initiative; 20. 100 Black Men; 21. Boris Lawrence Henson Foundation; 22. Central Virginia Clinicians of Color Network; 23. Counseling Alliance of VA; 24. Creciendo Juntos; 25. National Alliance for Hispanic Health; 26. National Coalition of 27. Black Women-Charlottesville Metropolitan area; 28. Therapy for Black Girls; 29. VDH Division of Multicultural Health and Community Engagement,discrim_resource_selection,,discrim_choice = 2,,,,,,
 ,,,,,,,,,,,,,,
 ,,,,,,,,,,,,,,
 ,,,,,,,,,,,,,,

@@ -6,6 +6,42 @@
             "type": "Text",
             "text": "Which three of these would you be most likely to use?",
             "html": true
+        },
+        {
+            "type": "Buttons",
+            "buttons": [
+                "1::LGBTQ Center",
+                "2::Cultural and Ethnic Organizations @UVA",
+                "3::Multicultural Student Center",
+                "4::Interfaith Student Center",
+                "5::Latinx Student Center",
+                "6::Office of African-American Affairs",
+                "7::BIPOC Mental Health and Wellness Resources",
+                "8::LGBTQ+ Mental Health and Wellness Resources",
+                "9::Multicultural Student Services Advising and Personal Support",
+                "10::Equality VA",
+                "11::PFLAG Blue Ridge: Charlottesville Anti-Violence Project",
+                "12::Planned Parenthood",
+                "13::Side by Side",
+                "14::The Women's Initiative",
+                "15::Trans Lifeline",
+                "16::Transgender Health Alliance of Central Virginia",
+                "17::VA Anti-Violence Project",
+                "18::UVA Teen & Young Adult Health Center",
+                "19::The Women's Initiative",
+                "20::100 Black Men",
+                "21::Boris Lawrence Henson Foundation",
+                "22::Central Virginia Clinicians of Color Network",
+                "23::Counseling Alliance of VA",
+                "24::Creciendo Juntos",
+                "25::National Alliance for Hispanic Health",
+                "26::National Coalition of 27. Black Women-Charlottesville Metropolitan area",
+                "28::Therapy for Black Girls",
+                "29::VDH Division of Multicultural Health and Community Engagement"
+            ],
+            "multiselect": true,
+            "name": "discrim_resource_selection",
+            "variable_name": "discrim_resource_selection"
         }
     ],
     "condition": [

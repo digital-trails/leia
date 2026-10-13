@@ -1,16 +1,150 @@
 {
-    "header_text": "-",
-    "header_icon": "assets/subtitle.png",
+    "header_text": "Resources",
     "elements": [
         {
             "type": "Text",
-            "text": "There are lots of options out there for resources to help with what you're going through. Check out the list below to find resources that might be a good fit for you, and pick three you think you might be able to use. [https://docs.google.com/document/d/12gJbgtisHaP0JO3C4Wfirmb2mES7iBxAzy6tOenKHvo/edit?tab=t.0]",
-            "html": true
+            "html": true,
+            "text": "<b>There are lots of options out there for resources to help with what you're going through. Check out the list below to find resources that might be a good fit for you, and pick three you think you might be able to use.</b><br/><br/><br/><br/>"
+        },
+        {
+            "type": "Text",
+            "html": true,
+            "text": "<b><font color=\"#9769ED\" size=6>LGBTQ Center</font></b><br/><br/>Get involved with the LGBTQ Center for the support and new connections you deserve.<br/><br/><a href=\"https://lgbtq.virginia.edu/get-involved\">https://lgbtq.virginia.edu/get-involved</a><br/><br/><br/><br/>"
+        },
+        {
+            "type": "Text",
+            "html": true,
+            "text": "<b><font color=\"#9769ED\" size=6>Cultural and Ethnic Organizations @UVA</font></b><br/><br/>Interested in joining a cultural and ethnic organization at UVA? Click on this link to discover all clubs you can join!<br/><br/><a href=\"https://atuva.student.virginia.edu/organizations?categories=1347\">https://atuva.student.virginia.edu/organizations?categories=1347</a><br/><br/><br/><br/>"
+        },
+        {
+            "type": "Text",
+            "html": true,
+            "text": "<b><font color=\"#9769ED\" size=6>Multicultural Student Center</font></b><br/><br/>The Multicultural Student Center offers a safe space for individuals who hold lots of different identities. Check it out!<br/><br/><a href=\"https://multicultural.virginia.edu/multicultural-student-center\">https://multicultural.virginia.edu/multicultural-student-center</a><br/><br/><br/><br/>"
+        },
+        {
+            "type": "Text",
+            "html": true,
+            "text": "<b><font color=\"#9769ED\" size=6>Interfaith Student Center</font></b><br/><br/>The Interfaith Student Center offers a safe space for students with different backgrounds and beliefs. Check it out!<br/><br/><a href=\"https://multicultural.virginia.edu/interfaith-student-center-ifsc\">https://multicultural.virginia.edu/interfaith-student-center-ifsc</a><br/><br/><br/><br/>"
+        },
+        {
+            "type": "Text",
+            "html": true,
+            "text": "<b><font color=\"#9769ED\" size=6>Latinx Student Center</font></b><br/><br/>The Latinx Student Center offers a safe and inclusive space for students who identify as Latinx. Check it out!<br/><br/><a href=\"https://multicultural.virginia.edu/latinx-student-center\">https://multicultural.virginia.edu/latinx-student-center</a><br/><br/><br/><br/>"
+        },
+        {
+            "type": "Text",
+            "html": true,
+            "text": "<b><font color=\"#9769ED\" size=6>Office of African-American Affairs </font></b><br/><br/>The Office of African-American Affairs can offer both academic and non-academic support for students who identify as African-American. Check it out!<br/><br/><a href=\"https://oaaa.virginia.edu/\">https://oaaa.virginia.edu/</a><br/><br/><br/><br/>"
+        },
+        {
+            "type": "Text",
+            "html": true,
+            "text": "<b><font color=\"#9769ED\" size=6>BIPOC Mental Health and Wellness Resources </font></b><br/><br/>Check out this comprehensive guide for BIPOC mental health and wellness resources compiled by the Women's Center <br/><br/><a href=\"https://docs.google.com/spreadsheets/u/1/d/e/2PACX-1vRgOeNjoY8vXHxjgmwdBRyOvyB0-H9rTf5VW43__XrrDpYKW5tnyjltcor6F4vEYgX-82hW9LLJ7NSp/pubhtml?gid=1529019313&single=true\">https://docs.google.com/spreadsheets/u/1/d/e/2PACX-1vRgOeNjoY8vXHxjgmwdBRyOvyB0-H9rTf5VW43__XrrDpYKW5tnyjltcor6F4vEYgX-82hW9LLJ7NSp/pubhtml?gid=1529019313&single=true</a><br/><br/><br/><br/>"
+        },
+        {
+            "type": "Text",
+            "html": true,
+            "text": "<b><font color=\"#9769ED\" size=6>LGBTQ+ Mental Health and Wellness Resources </font></b><br/><br/>Check out this comprehensive guide for LGBTQ+ mental health and wellness resources compiled by the Women's Center<br/><br/><a href=\"https://docs.google.com/spreadsheets/d/e/2PACX-1vRgOeNjoY8vXHxjgmwdBRyOvyB0-H9rTf5VW43__XrrDpYKW5tnyjltcor6F4vEYgX-82hW9LLJ7NSp/pubhtml?gid=1628978054&single=true\">https://docs.google.com/spreadsheets/d/e/2PACX-1vRgOeNjoY8vXHxjgmwdBRyOvyB0-H9rTf5VW43__XrrDpYKW5tnyjltcor6F4vEYgX-82hW9LLJ7NSp/pubhtml?gid=1628978054&single=true</a><br/><br/><br/><br/>"
+        },
+        {
+            "type": "Text",
+            "html": true,
+            "text": "<b><font color=\"#9769ED\" size=6>Multicultural Student Services Advising and Personal Support</font></b><br/><br/>MSS Professional Staff maintain an open door policy to discuss concerns related to your cultural, social, and personal development during your time at UVA.<br/><br/><a href=\"https://multicultural.virginia.edu/professional-staff\">https://multicultural.virginia.edu/professional-staff</a><br/><br/><br/><br/>"
+        },
+        {
+            "type": "Text",
+            "html": true,
+            "text": "<b><font color=\"#9769ED\" size=6>Equality VA</font></b><br/><br/>Leading statewide non-partisan advocacy, outreach, and educational organizations seeking equality for LGBTQ Virginians.\t<br/><br/><a href=\"https://equalityvirginia.org\">https://equalityvirginia.org</a><br/><br/><br/><br/>"
+        },
+        {
+            "type": "Text",
+            "html": true,
+            "text": "<b><font color=\"#9769ED\" size=6>PFLAG Blue Ridge: Charlottesville Anti-Violence Project</font></b><br/><br/>Provides information, peer support, education, and advocacy for LGBTQ+ persons, their families, and their friends. Visit their website for contact information, as well as meeting schedules.        <br/><br/><a href=\"https://pflagblueridge.org/charlottesville.html\">https://pflagblueridge.org/charlottesville.html</a><br/><br/><br/><br/>"
+        },
+        {
+            "type": "Text",
+            "html": true,
+            "text": "<b><font color=\"#9769ED\" size=6>Planned Parenthood</font></b><br/><br/>Provides family planning, sexual health and sexually transmitted infection services. Offering the morning after pill, abortion services, educational and outreach services in the community. Offers education, resources, services, and referrals for any client identifying as LGBT+. Visit their website to make an appointment.        <br/><br/><a href=\"https://plannedparenthood.org\">https://plannedparenthood.org</a><br/><br/><br/><br/>"
+        },
+        {
+            "type": "Text",
+            "html": true,
+            "text": "<b><font color=\"#9769ED\" size=6>Side by Side</font></b><br/><br/>Weekly curriculum based support groups for LGBTQ youth ages 14-20. Information and referrals for youth and families; training opportunities available for professionals and community agencies.        <br/><br/><a href=\"https://www.sidebysideva.org/\">https://www.sidebysideva.org/</a><br/><br/><br/><br/>"
+        },
+        {
+            "type": "Text",
+            "html": true,
+            "text": "<b><font color=\"#9769ED\" size=6>The Women's Initiative   </font></b><br/><br/>Provides culturally based trauma supportive services and culturally responsive counseling services, support groups, social support options, outreach and education. Includes FREE WALK-IN CLINICS: Free walk-in wellness sessions for immediate, short-term assistance including eligibility screenings, self- care assessments, information and referral services, education and emotional support.\t<br/><br/><a href=\"https://thewomensinitiative.org\">https://thewomensinitiative.org</a><br/><br/><br/><br/>"
+        },
+        {
+            "type": "Text",
+            "html": true,
+            "text": "<b><font color=\"#9769ED\" size=6>Trans Lifeline</font></b><br/><br/>A non-profit hotline staffed by transgender volunteers for people who are experiencing difficulty or crisis.\t<br/><br/><a href=\"https://translifeline.org\">https://translifeline.org</a><br/><br/><br/><br/>"
+        },
+        {
+            "type": "Text",
+            "html": true,
+            "text": "<b><font color=\"#9769ED\" size=6>Transgender Health Alliance of Central Virginia</font></b><br/><br/>Provides quality, aiffirming healthcare resources, referral options, and information for all members of the transgender community.        <br/><br/><a href=\"https://www.thacva.org\">https://www.thacva.org</a><br/><br/><br/><br/>"
+        },
+        {
+            "type": "Text",
+            "html": true,
+            "text": "<b><font color=\"#9769ED\" size=6>VA Anti-Violence Project</font></b><br/><br/>Provides advocacy and support services for LGBTQ+-identified survivors of violence, including individual and group support, individual and systems advocacy, and accompaniment; relationship classes, and trainings to professionals/community organizations on LGBTQ+ issues and challenges.\t<br/><br/><a href=\"https://virginiaavp.org\">https://virginiaavp.org</a><br/><br/><br/><br/>"
+        },
+        {
+            "type": "Text",
+            "html": true,
+            "text": "<b><font color=\"#9769ED\" size=6>UVA Teen & Young Adult Health Center</font></b><br/><br/>Comprehensive healthcare services to teens and young adults up to age 26, including transgender health services, mental health assessment, eating disorder assessment and treatment and mental health assessments. Most insurance accepted and financial assistance is available.\t<br/><br/><a href=\"https://uvahealth.com/services/lgbtq\">https://uvahealth.com/services/lgbtq</a><br/><br/><br/><br/>"
+        },
+        {
+            "type": "Text",
+            "html": true,
+            "text": "<b><font color=\"#9769ED\" size=6>The Women's Initiative   </font></b><br/><br/>Provides culturally based trauma supportive services and culturally responsive counseling services, support groups, social support options, outreach and education. Includes FREE WALK-IN CLINICS: Free walk-in wellness sessions for immediate, short-term assistance including eligibility screenings, self- care assessments, information and referral services, education and emotional support.\t<br/><br/><a href=\"https://thewomensinitiative.org\">https://thewomensinitiative.org</a><br/><br/><br/><br/>"
+        },
+        {
+            "type": "Text",
+            "html": true,
+            "text": "<b><font color=\"#9769ED\" size=6>100 Black Men</font></b><br/><br/>Working to improve the quality of life within the community and advocate eliminating the achievement gap of African American (AA) male students through mentoring by the members.<br/><br/><a href=\"https://www.100bmocv.org\">https://www.100bmocv.org</a><br/><br/><br/><br/>"
+        },
+        {
+            "type": "Text",
+            "html": true,
+            "text": "<b><font color=\"#9769ED\" size=6>Boris Lawrence Henson Foundation</font></b><br/><br/>Free virtual support for Blacks/African-Americans<br/><br/><a href=\"https://www.borislhensonfoundation.org\">https://www.borislhensonfoundation.org</a><br/><br/><br/><br/>"
+        },
+        {
+            "type": "Text",
+            "html": true,
+            "text": "<b><font color=\"#9769ED\" size=6>Central Virginia Clinicians of Color Network</font></b><br/><br/>Temporary NON-CRISIS emotional support by phone for adult people of color on Wednesdays 5–8pm during COVID-19 outbreak. Call during this time and/or leave your name, phone, and email to receive a call back. If demand exceeds available resources, our team will make every effort to connect you with appropriate care.<br/><br/><a href=\"https://cvccn.org/\">https://cvccn.org/</a><br/><br/><br/><br/>"
+        },
+        {
+            "type": "Text",
+            "html": true,
+            "text": "<b><font color=\"#9769ED\" size=6>Counseling Alliance of VA</font></b><br/><br/>Culturally based trauma supportive services and culturally responsive counseling services<br/><br/><a href=\"https://www.cavahelps.com/\">https://www.cavahelps.com/</a><br/><br/><br/><br/>"
+        },
+        {
+            "type": "Text",
+            "html": true,
+            "text": "<b><font color=\"#9769ED\" size=6>Creciendo Juntos</font></b><br/><br/>Resources and supportive services for Latinx individuals and families<br/><br/><a href=\"https://www.cj-network.org/\">https://www.cj-network.org/</a><br/><br/><br/><br/>"
+        },
+        {
+            "type": "Text",
+            "html": true,
+            "text": "<b><font color=\"#9769ED\" size=6>National Alliance for Hispanic Health</font></b><br/><br/>Culturally based trauma supportive services and culturally responsive counseling services<br/><br/><a href=\"https://www.healthyamericas.org\">https://www.healthyamericas.org</a><br/><br/><br/><br/>"
+        },
+        {
+            "type": "Text",
+            "html": true,
+            "text": "<b><font color=\"#9769ED\" size=6>National Coalition of Black Women-Charlottesville Metropolitan area</font></b><br/><br/>Advocating on behalf of Black women and girls to promote leadership development and gender equity<br/><br/><a href=\"http://www.100bwcville.org\">http://www.100bwcville.org</a><br/><br/><br/><br/>"
+        },
+        {
+            "type": "Text",
+            "html": true,
+            "text": "<b><font color=\"#9769ED\" size=6>Therapy for Black Girls</font></b><br/><br/>\tPodcast centered around mental wellness for Black women<br/><br/><a href=\"\thttps://therapyforblackgirls.com/podcast/\">\thttps://therapyforblackgirls.com/podcast/</a><br/><br/><br/><br/>"
+        },
+        {
+            "type": "Text",
+            "html": true,
+            "text": "<b><font color=\"#9769ED\" size=6>VDH Division of Multicultural Health and Community Engagement</font></b><br/><br/>Programs and partnerships to empower racial and ethnic minority communities to promote awareness of health inequities.\t<br/><br/><a href=\"https://www.vdh.virginia.gov/health-equity/division-of-multicultural-health-and-community-engagement/\">https://www.vdh.virginia.gov/health-equity/division-of-multicultural-health-and-community-engagement/</a><br/><br/><br/><br/>"
         }
-    ],
-    "condition": [
-        "discrim_choice",
-        "=",
-        2
     ]
 }
