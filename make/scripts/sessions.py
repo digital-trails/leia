@@ -207,11 +207,13 @@ def create_discrimination_domain():
                 text = row[4].strip()
                 page = create_discrimination_resource_page()
                 page["elements"].insert(0, {"type": "Text", "html": True, "text": f"<b>{text}</b><br/><br/><br/><br/>"})
+                page["condition"] = ["discrim_choice","=",2]
             
             elif session != '':
                 page = create_discrimination_page(row)
 
                 if lower(input) == 'puzzle':
+                    page["elements"][0]["text"] = page["elements"][0]["text"].rsplit(" ", 1)[0]
                     page["elements"][1]["words"] = [row[5]]
                     page["elements"][1]["missing_letter_count"] = 1
 

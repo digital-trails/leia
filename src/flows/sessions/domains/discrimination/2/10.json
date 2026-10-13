@@ -6,6 +6,10 @@
             "type": "Text",
             "text": "Think about what you might say to yourself about that person's judgement.\n\nYou may find it helpful to remind yourself that their judgement doesn't matter, that you are a part of community, that you are safe - or something else entirely.",
             "html": true
+        },
+        {
+            "type": "Entry",
+            "name": "discrim_wyo1_resolution"
         }
     ],
     "condition": [

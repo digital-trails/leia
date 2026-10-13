@@ -6,6 +6,10 @@
             "type": "Text",
             "text": "Think about what you might worry about in ways that they might be judging you, or raise the concerns you have about the situation\n\nSome examples you can use:\nI was worried about being judged. \nI thought people might not like me.\nI was concerned for my safety.",
             "html": true
+        },
+        {
+            "type": "Entry",
+            "name": "discrim_wyo1_concern"
         }
     ],
     "condition": [

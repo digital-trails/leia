@@ -146,5 +146,10 @@
             "html": true,
             "text": "<b><font color=\"#9769ED\" size=6>VDH Division of Multicultural Health and Community Engagement</font></b><br/><br/>Programs and partnerships to empower racial and ethnic minority communities to promote awareness of health inequities.\t<br/><br/><a href=\"https://www.vdh.virginia.gov/health-equity/division-of-multicultural-health-and-community-engagement/\">https://www.vdh.virginia.gov/health-equity/division-of-multicultural-health-and-community-engagement/</a><br/><br/><br/><br/>"
         }
+    ],
+    "condition": [
+        "discrim_choice",
+        "=",
+        2
     ]
 }

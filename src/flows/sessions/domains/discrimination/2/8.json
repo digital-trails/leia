@@ -6,6 +6,10 @@
             "type": "Text",
             "text": "Think about a situation where someone in appeared to be looking at you in a particular way...\n\nWhere were you when it happened? What was going on? Write about the event like it is happening now, not like it happened in the past.",
             "html": true
+        },
+        {
+            "type": "Entry",
+            "name": "discrim_wyo1_situation"
         }
     ],
     "condition": [

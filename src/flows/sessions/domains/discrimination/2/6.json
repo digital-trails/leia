@@ -1,10 +1,10 @@
 {
-    "header_text": "",
+    "header_text": "In the cafeteria",
     "header_icon": "assets/subtitle.png",
     "elements": [
         {
             "type": "Text",
-            "text": "You recognize that they are being ignorant. You remind yourself that their opinion is not fact.",
+            "text": "You recognize that they are being ignorant. You remind yourself that their opinion is not",
             "html": true
         },
         {

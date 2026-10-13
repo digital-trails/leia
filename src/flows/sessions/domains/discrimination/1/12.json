@@ -1,11 +1,15 @@
 {
-    "header_text": "-",
+    "header_text": "Journaling",
     "header_icon": "assets/subtitle.png",
     "elements": [
         {
             "type": "Text",
             "text": "Take a moment to write out about what has been stressing you out.",
             "html": true
+        },
+        {
+            "type": "Entry",
+            "name": "discrim_journal"
         }
     ],
     "condition": [

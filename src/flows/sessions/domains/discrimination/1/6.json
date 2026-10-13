@@ -1,10 +1,10 @@
 {
-    "header_text": "",
+    "header_text": "At the grocery store",
     "header_icon": "assets/subtitle.png",
     "elements": [
         {
             "type": "Text",
-            "text": "You take a moment to look around and you notice other shoppers wearing other visibly queer symbols or outfits. You realize that you are not alone.",
+            "text": "You take a moment to look around and you notice other shoppers wearing other visibly queer symbols or outfits. You realize that you are not",
             "html": true
         },
         {

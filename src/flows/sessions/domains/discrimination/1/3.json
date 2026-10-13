@@ -11,7 +11,7 @@
             "type": "Buttons",
             "buttons": [
                 "1::Write Your Own Scenarios",
-                "2::Journalling & Community Resources"
+                "2::Journaling & Community Resources"
             ],
             "ColumnCount": 1,
             "name": "discrim_choice",
