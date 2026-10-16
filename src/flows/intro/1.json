@@ -4,7 +4,9 @@
     "elements": [
         {
             "type": "Text",
-            "text": "Please enter your participant ID below. (The researcher will tell you this number.)"
+            "text": "Please enter your participant ID below. (The researcher will tell you this number.)",
+            "bordered": false,
+            "variable_name": "linking:code"
         },
         {
             "type": "Entry",
